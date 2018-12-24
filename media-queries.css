@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 1200px) {
+
+ul#menu {
+    letter-spacing: 1px;
+}
+
+ul#menu li {
+    margin-left: 23px;
+}
+
+.flexslider .flex-direction-nav .flex-next {
+    right: -50px;
+    bottom: 55%;
+    width: 40px;
+    height: 40px;
+}
+
+.flexslider .flex-direction-nav .flex-prev {
+    left: -50px;
+	bottom:55%;
+    width: 40px;
+    height: 40px;
+}
+
+.long-title {height: 540px;}
+.long-title2 {height:450px;}
+
+}
+
+@media (max-width: 991px) {
+
+ul#menu {display: none;}
+
+#home {
+    height: 1300px;
+    text-align: center;
+}
+
+.main-img {display: inline-block;}
+
+.video-bg-wrapper {
+	width:100%;
+}
+
+.flexslider .flex-direction-nav .flex-next {
+    display: none;
+}
+
+.flexslider .flex-direction-nav .flex-prev {
+    display: none;
+}
+
+.platform-icon {height:320px;}
+
+.team-member {height:400px;}
+
+.long-title {height: 430px;}
+
+.contact-l-col {
+	height: 300px;
+	width:100%;
+	float:none;
+}
+
+.contact-r-col {
+	height: auto;
+	width:100%;
+	float:none;
+}
+
+}
+
+
+@media (max-width: 768px) {
+
+body {font-size:13px;}
+h1 {font-size:30px;}
+h2 {font-size:24px;}
+h3 {font-size: 18px;}
+h4 {font-size: 13px;}
+p {font-size: 12px;}
+
+header {padding:0 15px;}
+
+#titlebar {
+	display: none;
+}
+
+.section-pad {padding-top:90px;}
+
+.section-title {
+	display: block;
+}
+
+.followMeBar {display: none;}
+.followWrap {display: none;}
+
+.container-pos {
+    bottom: initial;
+}
+
+.social-links {display: none;}
+
+.displaySection {
+    width: 75px;
+    padding: 15px 0;
+}
+
+.numberDisplay {
+	font-size: 24px;
+}
+
+.periodDisplay {
+	font-size: 10px;
+}
+
+#media {
+    height: auto;
+}
+
+.flexslider .slides {
+	text-align: center;
+}
+
+.article-title {
+    border-left:none;
+    padding:0;
+	margin-bottom: 15px;
+}
+
+.platform-icon {height:auto;}
+
+.token-col {
+	height:320px;
+	width:100%;
+    float:none;
+    background-position: center bottom;
+}
+
+.roadmap-wrapper {
+	width:100%;
+	padding:15px;
+}
+
+.timeline-pos {
+	bottom:17px;
+}
+
+#contact {
+    margin-top: 0;
+}
+
+.contact-r-col {
+    padding:50px;
+}
+
+.contact-title {display: none;}
+
+footer {text-align: center;}
+
+.copyright {
+	float:none;
+}
+
+ul.terms {
+	float:none;
+}
+
+}
+
+@media (max-width: 480px) {	
+
+.team-member {height:430px;}
+
+.long-title {height: 540px;}
+
+.long-title2 {height:450px;}
+
+.contact-r-col {
+    padding:30px;
+}
+
+.subscribe-btn {
+	font-size:9px !important;
+}
+
+#contact i {
+	padding-right: 20px;
+}
+
+.lng-mobile {
+    padding: 0 0 20px 25px;
+}
+
+
+
+}
+
