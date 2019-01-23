@@ -131,7 +131,7 @@
 			<li><a href="#roadmap">Roadmap</a></li>
 			<li><a href="#team">Team</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a href=""><img src="img/flag-en.png" alt=""></a> &nbsp;<img src="img/flag-KR.png" alt=""></li>
+			<!-- <li><a href=""><img src="img/flag-en.png" alt=""></a> &nbsp;<img src="img/flag-KR.png" alt=""></li> -->
 		</ul>
 		<nav> 
 			<a href="" id="menuToggle" title="show menu"><span class="navClosed"></span></a> 
@@ -152,7 +152,7 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-6 v-pad home-token">
 				<h1>Tokenized Bond</h1>
-				<h2>Trading & Collecting Platform</h2>
+				<h2>Blockchain Platform</h2>
 				<br><br><br>
 				<h4 class="bold">Pre-sale Starts in:</h4>
 				<br><br>
@@ -160,18 +160,18 @@
 					<div id="countdowntimer"><span id="future_date"></span></div>
 				</div>
 				<br><br><br>
-				<div class="progress wow fadeInLeft" data-wow-delay="0.3s">
+				<!-- <div class="progress wow fadeInLeft" data-wow-delay="0.3s">
           <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div>
-        </div>
+        </div> -->
         <div class="sale-container wow fadeInLeft" data-wow-delay="0.3s">
-          <div class="zerocap">USD$0</div>
+          <!-- <div class="zerocap">USD$0</div>
           <div class="current-cap">USD$8,000,000</div>
-          <div class="hardcap">Hard Cap US$31,250,000</div>
+          <div class="hardcap">Hard Cap US$31,250,000</div> -->
 				</div>
 				<br><br><br>
 				<ul class="home-btn">
-					<li><a href="documents/reditus-whitepaper-EN.pdf" target="_blank" class="btn">Whitepaper</a></li>
-					<li><a href="#contact" class="btn">Participate</a></li>
+					<li><a href="documents/reditus-whitepaper.pdf" target="_blank" class="btn">Whitepaper</a></li>
+					<li><a href="#sendgrid-subscription-widget" class="btn open-popup-link wow fadeInUp">Subscribe</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-6 col-md-6 v-pad wow fadeInUp" data-wow-delay="0.6s">
@@ -179,6 +179,33 @@
 			</div>
 		</div>
 	</div>
+
+
+	<!-- Subcribe code reformatted a little -->
+	<script type="text/javascript" src="//app.sgwidget.com/js/sg-widget.js"></script>
+	<style>
+		.sendgrid-subscription-widget input { padding: .5em .5em .55em; font-size: .8em; font-family: sans-serif } 
+		.sendgrid-subscription-widget #sg_signup_first_name, .sendgrid-subscription-widget #sg_signup_last_name { margin-right: .5em } 
+		.sendgrid-subscription-widget #sg-submit-btn { display: inline-block; color: #444; border: 1px solid #ccc; background: #ddd; box-shadow: 0 0 5px -1px rgba(0, 0, 0, .2); cursor: pointer; vertical-align: middle; max-width: 100px; padding: .5em; margin: 0 .4em; text-align: center; font-size: .9em; font-family: sans-serif } .sendgrid-subscription-widget #sg-submit-btn:active { color: #8e8b8b; box-shadow: 0 0 5px -1px rgba(0, 0, 0, .6) } .sendgrid-subscription-widget .response { display: none; font-family: sans-serif; font-size: .8em } .sendgrid-subscription-widget .success { color: green } .sendgrid-subscription-widget .error, .sendgrid-subscription-widget .sg-consent-text a { color: #3097d1 } .sendgrid-subscription-widget .sg-consent-text { font-size: .9em } .sendgrid-subscription-widget .sg-consent-text label { font-weight: 400 } .sendgrid-subscription-widget .required { outline: 1px solid #f00; } .sendgrid-subscription-widget .sg_custom { margin-left: 5px; } .sendgrid-subscription-widget .checkbox_label { padding-left: 3px; } 
+	</style>
+
+	<div id="sendgrid-subscription-widget" class="sendgrid-subscription-widget white-popup mfp-hide sans" data-emailerror="Please enter a valid email address" data-checkboxerror="Please tick the box to accept our conditions">
+		<form id="sg-widget" data-token="1acb2caf2653e67740ba6d9cae6197e2" onsubmit="return false;">
+			<div class="sg-response" id="sg-response"></div>
+			<input id="sg_signup_first_name" type="text" name="sg_signup_first_name" placeholder="First Name" required>
+			<input id="sg_signup_last_name" type="text" name="sg_signup_last_name" placeholder="Last Name" required>
+			<input id="sg_email" type="email" name="sg_email" placeholder="you@example.com" required>
+			<input type="submit" id="sg-submit-btn" value="Subscribe">
+			<div class="sg-consent-text">
+				<label>
+					<input type="checkbox" id="sg_consent_checkbox" name="sg_consent_checkbox"> I understand and consent to the following
+				</label> <a target="_blank" href="">Privacy Notice</a>
+			</div>
+		</form>
+	</div>
+
+	<!-- Subcribe code reformatted a little - end -->
+
 </section>
 <!------------ Home end ------------>
 
@@ -192,8 +219,10 @@
 				<div class="flex-container">
 					<div class="video-slider">
 						<ul class="slides">
-							<li><a href="https://www.youtube.com/channel/UCOrao7LWvGPJea_R0u-BP_Q" class="video-pop-up"><img src="img/video-thumb.jpg" alt=""></a></li>
-							<li><a href="https://www.youtube.com/channel/UCOrao7LWvGPJea_R0u-BP_Q" class="video-pop-up"><img src="img/video-thumb.jpg" alt=""></a></li>
+							<li><iframe width="560" height="315" src="https://www.youtube.com/embed/YJUhV5D3yx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+							<li><iframe width="560" height="315" src="https://www.youtube.com/embed/X1azExDqgXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+							<li><iframe width="560" height="315" src="https://www.youtube.com/embed/CGMJ1sqqc1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+							<li><iframe width="560" height="315" src="https://www.youtube.com/embed/yJO7ywVNB1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
 						</ul>
 					</div>
 				</div>
@@ -1204,8 +1233,7 @@ $(function() {
 		}
 	  });
 	});
-</script> 
-	
+</script>
 	
 <!-- Add sticky headers -->
 <script type="text/javascript">
@@ -1283,12 +1311,10 @@ $(function() {
 <script>
     $(document).ready(function () {
         $('.open-popup-link').magnificPopup({
-  type:'inline',
-  midClick: true,
-  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-  
-});
-		
+		  type:'inline',
+		  midClick: true,
+		  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+		});
     });
 </script>
 
