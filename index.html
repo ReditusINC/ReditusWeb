@@ -40,6 +40,12 @@
 
 .white-popup p {color:#333333;}
 
+.white-popup input {background:#eee; color: #333;}
+
+.white-popup .input-style::-webkit-input-placeholder {
+  color:#999;
+}
+
 .mfp-bg {
 	background: #333;
 }
@@ -183,23 +189,27 @@
 
 	<!-- Subcribe code reformatted a little -->
 	<script type="text/javascript" src="//app.sgwidget.com/js/sg-widget.js"></script>
-	<style>
-		.sendgrid-subscription-widget input { padding: .5em .5em .55em; font-size: .8em; font-family: sans-serif } 
-		.sendgrid-subscription-widget #sg_signup_first_name, .sendgrid-subscription-widget #sg_signup_last_name { margin-right: .5em } 
-		.sendgrid-subscription-widget #sg-submit-btn { display: inline-block; color: #444; border: 1px solid #ccc; background: #ddd; box-shadow: 0 0 5px -1px rgba(0, 0, 0, .2); cursor: pointer; vertical-align: middle; max-width: 100px; padding: .5em; margin: 0 .4em; text-align: center; font-size: .9em; font-family: sans-serif } .sendgrid-subscription-widget #sg-submit-btn:active { color: #8e8b8b; box-shadow: 0 0 5px -1px rgba(0, 0, 0, .6) } .sendgrid-subscription-widget .response { display: none; font-family: sans-serif; font-size: .8em } .sendgrid-subscription-widget .success { color: green } .sendgrid-subscription-widget .error, .sendgrid-subscription-widget .sg-consent-text a { color: #3097d1 } .sendgrid-subscription-widget .sg-consent-text { font-size: .9em } .sendgrid-subscription-widget .sg-consent-text label { font-weight: 400 } .sendgrid-subscription-widget .required { outline: 1px solid #f00; } .sendgrid-subscription-widget .sg_custom { margin-left: 5px; } .sendgrid-subscription-widget .checkbox_label { padding-left: 3px; } 
-	</style>
 
 	<div id="sendgrid-subscription-widget" class="sendgrid-subscription-widget white-popup mfp-hide sans" data-emailerror="Please enter a valid email address" data-checkboxerror="Please tick the box to accept our conditions">
 		<form id="sg-widget" data-token="1acb2caf2653e67740ba6d9cae6197e2" onsubmit="return false;">
 			<div class="sg-response" id="sg-response"></div>
-			<input id="sg_signup_first_name" type="text" name="sg_signup_first_name" placeholder="First Name" required>
-			<input id="sg_signup_last_name" type="text" name="sg_signup_last_name" placeholder="Last Name" required>
-			<input id="sg_email" type="email" name="sg_email" placeholder="you@example.com" required>
-			<input type="submit" id="sg-submit-btn" value="Subscribe">
+			<input id="sg_signup_first_name" type="text" class="input-style" name="sg_signup_first_name" placeholder="First Name" required>
+			<br><br>
+			<input id="sg_signup_last_name" type="text" class="input-style" name="sg_signup_last_name" placeholder="Last Name" required>
+			<br><br>
+			<input id="sg_email" type="email" class="input-style" name="sg_email" placeholder="you@example.com" required>
+			<br><br>
+			<button type="submit" class="btn subscribe-btn" id="sg-submit-btn" value="Subscribe">Subscribe</button>
+			<br><br><br>
 			<div class="sg-consent-text">
 				<label>
-					<input type="checkbox" id="sg_consent_checkbox" name="sg_consent_checkbox"> I understand and consent to the following
-				</label> <a target="_blank" href="">Privacy Notice</a>
+					<input type="checkbox" id="sg_consent_checkbox" name="sg_consent_checkbox"> &nbsp;I understand and consent to the following <a target="_blank" class="red-text" href="">Privacy Notice</a>
+				</label> 
+				<!--<label class="code-enabler">
+            <input type="checkbox" id="sg_consent_checkbox" name="sg_consent_checkbox">
+            <span class="checkmark"></span>
+            <p>I understand and consent to the following</p>
+        </label>-->
 			</div>
 		</form>
 	</div>
@@ -1148,8 +1158,8 @@
 		<div class="subscribe-wrapper">
 			<h4 class="white-text">Don't miss the latest news and updates!</h4>
 			<br>
-			<div class="subscribe-input"><input type='text' class="input-style" placeholder="Your email address" required/></div>
-			<div class="subscribe-btn-wrapper"><button type='submit' value='Submit' class="btn subscribe-btn">Subscribe</button></div>
+			<!--<div class="subscribe-input"><input type='text' class="input-style" placeholder="Your email address" required/></div>-->
+			<a href="#sendgrid-subscription-widget" class="btn subscribe-btn subscribe-btn-wrapper open-popup-link">Subscribe</a>
 			<div style="clear:both"></div>
 		</div>
 	</div>

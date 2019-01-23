@@ -673,16 +673,16 @@ table .btn:hover {
 	float:left;
 }
 
-.subscribe-btn-wrapper {
-	width:35%;
-	float:left;
-}
-
 .subscribe-btn {
 	color:#fff;
 	background:#ff003f;
 	width: 100%;
 	padding:0px;
+}
+
+.subscribe-btn-wrapper {
+	width:35%;
+	float:left;
 }
 
 .subscribe-btn:hover {
@@ -692,7 +692,7 @@ table .btn:hover {
 }
 
 
-input[type="text"], input[type="password"], textarea, select
+input, textarea, select
 { 
 background: #72222a;
   line-height:140%;  
@@ -704,9 +704,13 @@ background: #72222a;
   color:#fff;
 }
 
+input[type="checkbox"] {width:auto; height: auto;}
+
+label {color:#333; font-weight: 300; line-height: 1.4;}
+
 textarea {height:180px; padding:15px 20px;}
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus,textarea:focus, select:focus
+input:focus,textarea:focus, select:focus
 {
   outline: none !important;
 }
