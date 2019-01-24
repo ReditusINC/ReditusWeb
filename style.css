@@ -159,7 +159,7 @@ img {width:100%;}
 	height:230px;
 }
 #token-sticky {
-	background-image: url(img/side-title-platform.png);
+	background-image: url(img/side-title-tokensale.png);
 	height:230px;
 }
 #roadmap-sticky {
@@ -347,7 +347,7 @@ Media
 
 #media {
 	background-color:#420108;
-	height: 1200px;
+	height: 1000px;
 }
 
 .video-bg-wrapper {
