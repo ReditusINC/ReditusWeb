@@ -248,10 +248,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="flex-container">
 					<div class="video-slider">
 						<ul class="slides">
-							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=YJUhV5D3yx8" class="video-pop-up"></a><img src="https://img.youtube.com/vi/YJUhV5D3yx8/maxresdefault.jpg" alt=""></div></li>
-							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=X1azExDqgXg" class="video-pop-up"></a><img src="https://img.youtube.com/vi/X1azExDqgXg/maxresdefault.jpg" alt=""></div></li>
-							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=CGMJ1sqqc1w" class="video-pop-up"></a><img src="https://img.youtube.com/vi/CGMJ1sqqc1w/maxresdefault.jpg" alt=""></div></li>
-							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=yJO7ywVNB1s" class="video-pop-up"></a><img src="https://img.youtube.com/vi/yJO7ywVNB1s/maxresdefault.jpg" alt=""></div></li>
+							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=YJUhV5D3yx8" class="video-pop-up"></a><img class="img-video" src="https://img.youtube.com/vi/YJUhV5D3yx8/maxresdefault.jpg" alt=""></div></li>
+							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=X1azExDqgXg" class="video-pop-up"></a><img class="img-video" src="https://img.youtube.com/vi/X1azExDqgXg/maxresdefault.jpg" alt=""></div></li>
+							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=CGMJ1sqqc1w" class="video-pop-up"></a><img class="img-video" src="https://img.youtube.com/vi/CGMJ1sqqc1w/maxresdefault.jpg" alt=""></div></li>
+							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=yJO7ywVNB1s" class="video-pop-up"></a><img class="img-video" src="https://img.youtube.com/vi/yJO7ywVNB1s/maxresdefault.jpg" alt=""></div></li>
 						</ul>
 					</div>
 				</div>
@@ -1375,9 +1375,8 @@ $(function() {
 <script>
     $(document).ready(function () {
 
-    	$('.youtube-video').click(function(e) {
-    		e.preventDefault();
-    		$(this).find('.video-pop-up').each(function (i, el){
+    	$('.img-video').click(function() {
+    		$(this).parent().find(".video-pop-up").each(function(e, l) {
     			$(this).trigger('click');
     		});
     	});

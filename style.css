@@ -342,7 +342,7 @@ ul.home-btn li {
 	background-size: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
 	.main-img {
 		max-width: 300px;
 	}
