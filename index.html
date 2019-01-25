@@ -1402,7 +1402,13 @@ $(function() {
 		                src: 'https://www.youtube.com/embed/%id%?autoplay=1'
 		            }
 		        }
-		    }
+		    },
+		    callbacks: {
+		      	close: function(){
+			        // $('.video-slider').flexslider("play");
+			        return false;
+		      	}
+		  	}
 		});
 
 		$('a.gallery').magnificPopup({
@@ -1421,15 +1427,18 @@ $(function() {
 		$('.flexslider').flexslider({
 			animation: 'slide',
 			controlsContainer: '.flexslider',
-			slideshow: false
+			slideshow: false,
+			pauseOnAction: false,
 		});
 
 		$('.video-slider').flexslider({
 			animation: 'slide',
 			controlsContainer: '.video-slider',
-			slideshowSpeed: 3500
+			slideshowSpeed: 3500,
+			pauseOnHover: false,
+        	pauseOnAction: false,
+        	touch: false,
 		});
-
 
     });
 </script>
