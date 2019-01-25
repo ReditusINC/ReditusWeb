@@ -248,10 +248,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="flex-container">
 					<div class="video-slider">
 						<ul class="slides">
-							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=YJUhV5D3yx8" class="video-pop-up"></a><img class="img-video" src="https://img.youtube.com/vi/YJUhV5D3yx8/maxresdefault.jpg" alt=""></div></li>
-							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=X1azExDqgXg" class="video-pop-up"></a><img class="img-video" src="https://img.youtube.com/vi/X1azExDqgXg/maxresdefault.jpg" alt=""></div></li>
-							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=CGMJ1sqqc1w" class="video-pop-up"></a><img class="img-video" src="https://img.youtube.com/vi/CGMJ1sqqc1w/maxresdefault.jpg" alt=""></div></li>
-							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=yJO7ywVNB1s" class="video-pop-up"></a><img class="img-video" src="https://img.youtube.com/vi/yJO7ywVNB1s/maxresdefault.jpg" alt=""></div></li>
+							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=YJUhV5D3yx8" class="video-pop-up"></a><img src="https://img.youtube.com/vi/YJUhV5D3yx8/maxresdefault.jpg" alt=""></div></li>
+							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=X1azExDqgXg" class="video-pop-up"></a><img src="https://img.youtube.com/vi/X1azExDqgXg/maxresdefault.jpg" alt=""></div></li>
+							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=CGMJ1sqqc1w" class="video-pop-up"></a><img src="https://img.youtube.com/vi/CGMJ1sqqc1w/maxresdefault.jpg" alt=""></div></li>
+							<li><div class="youtube-video"><a href="https://www.youtube.com/watch?v=yJO7ywVNB1s" class="video-pop-up"></a><img src="https://img.youtube.com/vi/yJO7ywVNB1s/maxresdefault.jpg" alt=""></div></li>
 						</ul>
 					</div>
 				</div>
@@ -1375,8 +1375,8 @@ $(function() {
 <script>
     $(document).ready(function () {
 
-    	$('.img-video').click(function() {
-    		$(this).parent().find(".video-pop-up").each(function(e, l) {
+    	$('.youtube-video').click(function(e) {
+    		$(this).find('.video-pop-up').each(function (i, el){
     			$(this).trigger('click');
     		});
     	});
@@ -1386,12 +1386,7 @@ $(function() {
 		  midClick: true,
 		  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 		});
-    });
-</script>
 
-<!-- Add video popup -->
-<script>
-    $(document).ready(function () {
 
         $('.video-pop-up').magnificPopup({
         	type: 'iframe',
@@ -1422,29 +1417,27 @@ $(function() {
 				tError: 'The image could not be loaded.',
 			}
 		});
-		
-    });
-</script>
 
-<!-- Add flexslider -->
-<script src="js/jquery.flexslider-min.js"></script>
-<script>
-	$(document).ready(function () {
 		$('.flexslider').flexslider({
 			animation: 'slide',
 			controlsContainer: '.flexslider',
 			slideshow: false
 		});
-	});
 
-	$(document).ready(function () {
 		$('.video-slider').flexslider({
 			animation: 'slide',
 			controlsContainer: '.video-slider',
 			slideshowSpeed: 3500
 		});
-	});
+
+
+    });
 </script>
+
+
+<!-- Add flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+
 
 <!-- Add timer -->
 <script type="text/javascript" src="js/jQuery.countdownTimer.js"></script>
