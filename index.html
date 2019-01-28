@@ -83,11 +83,6 @@ section {
     background: #ce0231;
 }
 
-a.disabled {
-   pointer-events: none;
-   cursor: default;
-}
-
 </style>	
 
 <!-- Add sidemenu -->
@@ -200,15 +195,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<br><br><br>
 				<ul class="home-btn">
 					<li><a href="documents/Reditus Whitepaper.pdf" target="_blank" class="btn">Whitepaper</a></li>
-					<li><a id="btn-subcribe1" href="#sendgrid-subscription-widget" class="disabled btn open-popup-link wow fadeInUp">Subscribe</a></li>
+					<li><a href="#sendgrid-subscription-widget" class="btn open-popup-link wow fadeInUp">Subscribe</a></li>
 				</ul>
-
-				<div class="form-check text-left mt-3">
-	                <input type="checkbox" class="form-check-input" name="agreeCheckbox" id="agreeCheckbox1">
-	                <label class="form-check-label white-text" for="agreeCheckbox1">&nbsp I understand and consent to the following <a href="#privacy" class="open-popup-link red-text">Privacy Notice</a></label>
-	            </div>
-
-
 			</div>
 
 			<div class="col-lg-6 col-md-6 col-sm-6 v-pad wow fadeInUp" data-wow-delay="0.6s">
@@ -1150,15 +1138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<h4 class="white-text">Don't miss the latest news and updates!</h4>
 			<br>
 			<!--<div class="subscribe-input"><input type='text' class="input-style" placeholder="Your email address" required/></div>-->
-			<div class="row" style="margin-left: 0px;">
-				<a id="btn-subcribe2" href="#sendgrid-subscription-widget" class="disabled btn subscribe-btn subscribe-btn-wrapper open-popup-link">Subscribe</a>
-			</div>
-			<br>
-			 <div class="form-check text-left mt-3">
-                <input type="checkbox" class="form-check-input" name="agreeCheckbox" id="agreeCheckbox2">
-                <label class="form-check-label white-text" for="agreeCheckbox2">&nbsp I understand and consent to the following <a href="#privacy" class="open-popup-link red-text">Privacy Notice</a></label>
-            </div>
-
+			<a href="#sendgrid-subscription-widget" class="btn subscribe-btn subscribe-btn-wrapper open-popup-link">Subscribe</a>
 			<div style="clear:both"></div>
 		</div>
 	</div>
@@ -1452,35 +1432,17 @@ $(function() {
 		});
 
 		$('.video-slider').flexslider({
-			animation: 'fade',
+			animation: 'slide',
 			controlsContainer: '.video-slider',
 			slideshowSpeed: 3500,
 			pauseOnHover: false,
         	pauseOnAction: false,
-        	touch: true,
+        	touch: false,
 		});
 
-		$('.video-slider').on('touchmove', function (e) { e.stopPropagation(); });
-
-
-	   	$("#agreeCheckbox1").change(() => {
-	        if ($("#agreeCheckbox1").is(":checked")) {
-	            $('#btn-subcribe1').removeClass("disabled");
-	        } else {
-	            $('#btn-subcribe1').addClass("disabled");
-	        }
-	   	});
-
-	   	$("#agreeCheckbox2").change(() => {
-	        if ($("#agreeCheckbox2").is(":checked")) {
-	            $('#btn-subcribe2').removeClass("disabled");
-	        } else {
-	            $('#btn-subcribe2').addClass("disabled");
-	        }
-	   	});
     });
-
 </script>
+
 
 <!-- Add flexslider -->
 <script src="js/jquery.flexslider-min.js"></script>
@@ -1493,7 +1455,7 @@ $(function() {
 <script type="text/javascript">
     $(function(){
         $("#future_date").countdowntimer({
-            dateAndTime : "2019/03/14 12:00:00",
+            dateAndTime : "2019/04/01 00:00:00",
             labelsFormat : true,
             displayFormat : "DHMS",
         });
@@ -1504,7 +1466,7 @@ $(function() {
 <script src="js/wow.js"></script>
 
 <script>
-	new WOW().init();
+new WOW().init();
 </script>
 
 <script>
