@@ -469,7 +469,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</tr>
 				<tr valign="top">
 					<td style="width:165px;"><span class="small-text red-text">SUPPLY</span></td>
-					<td>2,000,000,000 ITCO Capped at Token Sale</td>
+					<td>10,000,000,000 ITCO Capped</td>
 					<td>Depending on the Receivables Tokenization Process</td>
 				</tr>
 				<tr valign="top">
@@ -516,20 +516,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</tr>
 						<tr valign="top" style="background:#d10332;">
 							<td>Total Supply</td>
-							<td>2,000,000,000 </td>
+							<td>10,000,000,000 </td>
 						</tr>
-						<tr valign="top">
+						<!-- <tr valign="top">
 							<td>Tokens for Sale</td>
 							<td>1,000,000,000 (50%)</td>
-						</tr>
-						<tr valign="top" style="background:#d10332;">
-							<td>Token Price</td>
-							<td>US$0.031</td>
-						</tr>
+						</tr> -->
 						<tr valign="top">
+							<td>Token Price</td>
+							<td>US${{ tokenPrice }}</td>
+						</tr>
+						<!-- <tr valign="top">
 							<td>Hard Cap</td>
 							<td>US$31,250,000</td>
-						</tr>
+						</tr> 
 						<tr valign="top" style="background:#d10332;">
 							<td>Currencies Accepted</td>
 							<td>ETH, USD, BTC</td>
@@ -561,13 +561,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<tr valign="top" style="background:#d10332;">
 							<td>Restricted Countries</td>
 							<td>USA & China</td>
-						</tr>
+						</tr> -->
 					</table>
 				</div>
 				<br><br>
-				<p>The IT Coin sale will be conducted on the Ethereum blockchain. IT Coin (ticker symbol: ITCO) will be sold as an ERC20 token. Once Reditus® RMS (Receivables Management System) has been deployed, Reditus® RED Token (ticker symbol: REDT) will be exchangeable with IT Coin.</p>
+				<!-- <p>The IT Coin sale will be conducted on the Ethereum blockchain. IT Coin (ticker symbol: ITCO) will be sold as an ERC20 token. Once Reditus® RMS (Receivables Management System) has been deployed, Reditus® RED Token (ticker symbol: REDT) will be exchangeable with IT Coin.</p>
 				<br>
-				<p>Participation in the Pre-sale and Public sale shall be limited to individuals with each wallet cleared pursuant Know-Your-Customer (KYC) checks. KYC checks include proof of identity and residency.</p>
+				<p>Participation in the Pre-sale and Public sale shall be limited to individuals with each wallet cleared pursuant Know-Your-Customer (KYC) checks. KYC checks include proof of identity and residency.</p> -->
 			</div>
 			<div class="col-lg-7 col-md-7 v-pad">
 				<h3>Token Allocation</h3>
@@ -653,7 +653,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div style="height:60px"></div>
             </div>
           </li>
-          <li class="timeline-item">
+          <!-- <li class="timeline-item">
             <div class="timeline-info"><h3>November 2017</h3></div>
             <div class="timeline-marker timeline-active"></div>
             <div class="timeline-content">
@@ -667,7 +667,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<h4>Reditus (Blockchain): <span style="color:#cc9197; font-size: 13px;">Prototype Completion</span></h4>
 							<h4>ICO Start</h4>
             </div>
-          </li>
+          </li> -->
           <li class="timeline-item">
             <div class="timeline-info"><h3>May 2019</h3></div>
             <div class="timeline-marker"></div>
@@ -1593,6 +1593,16 @@ for (var i = 0; i < btns2.length; i++) {
 
 <script>
 (function(d){d.each(["backgroundColor","borderBottomColor","borderLeftColor","borderRightColor","borderTopColor","color","outlineColor"],function(f,e){d.fx.step[e]=function(g){if(!g.colorInit){g.start=c(g.elem,e);g.end=b(g.end);g.colorInit=true}g.elem.style[e]="rgb("+[Math.max(Math.min(parseInt((g.pos*(g.end[0]-g.start[0]))+g.start[0]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[1]-g.start[1]))+g.start[1]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[2]-g.start[2]))+g.start[2]),255),0)].join(",")+")"}});function b(f){var e;if(f&&f.constructor==Array&&f.length==3){return f}if(e=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(f)){return[parseInt(e[1]),parseInt(e[2]),parseInt(e[3])]}if(e=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(f)){return[parseFloat(e[1])*2.55,parseFloat(e[2])*2.55,parseFloat(e[3])*2.55]}if(e=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(f)){return[parseInt(e[1],16),parseInt(e[2],16),parseInt(e[3],16)]}if(e=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(f)){return[parseInt(e[1]+e[1],16),parseInt(e[2]+e[2],16),parseInt(e[3]+e[3],16)]}if(e=/rgba\(0, 0, 0, 0\)/.exec(f)){return a.transparent}return a[d.trim(f).toLowerCase()]}function c(g,e){var f;do{f=d.css(g,e);if(f!=""&&f!="transparent"||d.nodeName(g,"body")){break}e="backgroundColor"}while(g=g.parentNode);return b(f)}var a={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0],transparent:[255,255,255]}})(jQuery);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script>
+<script type="text/javascript">
+	var sectionTokenSale = new Vue({
+	  el: '#tokensale',
+	  data: {
+	    tokenPrice: 0.018,
+	  }
+	});
 </script>
 
 </body>
